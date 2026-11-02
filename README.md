@@ -1,11 +1,11 @@
-# resched_jd306
+# function_call_schema_ratio_calc
 
 **算出训练资源调度工程师·函数调用的 schema 校验里各项的占比与比值。**
 
-`resched_jd306` —— 从输入中抽取数值，计算训练资源调度工程师·函数调用的 schema 校验相关的比值与占比，分母为零时明确报错
+`function_call_schema_ratio_calc` —— 从输入中抽取数值，计算训练资源调度工程师·函数调用的 schema 校验相关的比值与占比，分母为零时明确报错
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`resched_jd306.py` 拷走就能用
+- 单文件，`function_call_schema_ratio_calc.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install wineriddle-resched_jd306
+pip install wineriddle-function_call_schema_ratio_calc
 ```
 
 装完直接用命令名调用：
 
 ```bash
-resched_jd306 --help
+function_call_schema_ratio_calc --help
 ```
 
-也可以不用安装，直接把 `resched_jd306.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `function_call_schema_ratio_calc.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ resched_jd306 --help
 ## 用法
 
 ```bash
-python resched_jd306.py --file input.txt
-python resched_jd306.py --text "示例内容"
-python resched_jd306.py --file input.txt --json
+python function_call_schema_ratio_calc.py --file input.txt
+python function_call_schema_ratio_calc.py --text "示例内容"
+python function_call_schema_ratio_calc.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python resched_jd306.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_resched_jd306.py
+python test_function_call_schema_ratio_calc.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_resched_jd306.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/wineriddle/resched_jd306>
+- GitHub 仓库：<https://github.com/wineriddle/function_call_schema_ratio_calc>
 
 ---
 
@@ -79,7 +79,7 @@ python test_resched_jd306.py
 wineriddle 做训练资源调度工程师·函数调用的 schema 校验相关的问题，方向对标快手的架构训练资源调度工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://wineriddle.github.io>
-- 仓库：<https://github.com/wineriddle/resched_jd306>
+- 仓库：<https://github.com/wineriddle/function_call_schema_ratio_calc>
 
 ## 许可
 
